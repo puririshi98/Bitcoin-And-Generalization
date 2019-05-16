@@ -1,0 +1,22 @@
+Using: <function generate_up_down at 0x7ffba7408488>
+Reading bitcoin market data file here: amazon_prices.csv.
+Traceback (most recent call last):
+  File "data_generator.py", line 96, in <module>
+    main()
+  File "data_generator.py", line 92, in main
+    data_gen_func(data_folder, bitcoin_file)
+  File "data_generator.py", line 41, in generate_up_down
+    return generate_cnn_dataset(data_folder, bitcoin_file, get_price_direction)
+  File "data_generator.py", line 45, in generate_cnn_dataset
+    btc_df = file_processor(bitcoin_file)
+  File "/home/ubuntu/btc_proj/data_manager.py", line 10, in file_processor
+    d = pd.read_table(data_file, sep=',', header=None, index_col=0, names=['price', 'volume'])
+  File "/usr/local/lib/python3.5/dist-packages/pandas/io/parsers.py", line 678, in parser_f
+    return _read(filepath_or_buffer, kwds)
+  File "/usr/local/lib/python3.5/dist-packages/pandas/io/parsers.py", line 446, in _read
+    data = parser.read(nrows)
+  File "/usr/local/lib/python3.5/dist-packages/pandas/io/parsers.py", line 1036, in read
+    ret = self._engine.read(nrows)
+  File "/usr/local/lib/python3.5/dist-packages/pandas/io/parsers.py", line 1886, in read
+    values = data.pop(self.index_col[i])
+IndexError: list index out of range

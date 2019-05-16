@@ -1,0 +1,7 @@
+import numpy as np
+
+train_data=np.load('embedded_train_data.npy')
+train_labels=np.load('train_labels.npy')
+test_labels=np.load('test_labels.npy')
+test_data=np.load('embedded_test_data.npy')
+print(train_data.shape,train_labels.shape)

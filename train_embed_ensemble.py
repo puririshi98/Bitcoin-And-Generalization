@@ -35,7 +35,7 @@ for num_model in range(16,80):
 	
 	
 	model = model.to(device)
-	optimizer_ft = optim.SGD(model.parameters(), lr=.003)
+	optimizer_ft = optim.SGD(model.parameters(), lr=.001)
 
 	criterion = nn.CrossEntropyLoss()
 	

@@ -22,10 +22,14 @@ python3 train_embed_ensemble.py
 
 to evaluate on unseen data run 
 
+
+
 python3 data_generator.py final_unseen_test /tmp/coinbaseUSD.csv 
-\n
+
+
 python3 embed_unseen.py
-\n
+
+
 python3 ensemble_eval.py
 
 

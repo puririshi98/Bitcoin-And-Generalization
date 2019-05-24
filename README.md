@@ -1,4 +1,5 @@
 to get data
+
 ./data_download.sh # will download it to /tmp/
 
 python3 data_generator.py big_data /tmp/coinbaseUSD.csv 

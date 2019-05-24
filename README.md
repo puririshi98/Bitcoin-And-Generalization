@@ -1,4 +1,6 @@
+Using Python 3.6, Pytorch 1.1
 to get data
+
 
 ./data_download.sh # will download it to /tmp/
 
